@@ -1,0 +1,4 @@
+# The deployer image only installs dependencies (see deployer/Dockerfile), so the
+# build context is limited to requirements.txt.
+*
+!requirements.txt

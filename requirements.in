@@ -1,0 +1,11 @@
+# Top-level dependencies for the deployer package and its tests.
+# After editing, regenerate the fully pinned lock file with:
+#   uv pip compile requirements.in -o requirements.txt --python-version 3.11
+google-cloud-geminidataanalytics==0.13.2
+google-auth==2.58.0
+httpx==0.28.1
+pytest==8.*
+
+# Used directly (google.protobuf.field_mask_pb2). Kept below 7 to stay compatible
+# with a2a-sdk, which helper_scripts/ uses.
+protobuf<7
